@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walk through your first HTML page</title>
   </head>
   <body>
@@ -53,7 +56,7 @@
       width="65%"
     />
     <p>Tags are what you’ll see the most when you look at any HTML source code. A tag can ideally be seen as a wrapper to any item on your HTML document. Tags tell what magic is to be done on the content enclosed by them.</p>
-    <p>Let’s look at two types of tags:</p>
+    <p>Lets look at two types of tags:</p>
     <ol start="1">
       <li><tag-example-1>I need a closign tag<tag-example-1>
           </li>
@@ -61,9 +64,119 @@
     </ol>
    <p>In the first example, the sentence is wrapped by two tags. The first one is called the opening tag and the second one is called the closing tag. Everything in between is affected by the properties of the tag. Very commonly used examples of such tags are <html>, <head>, <body>, <strong>, etc.</p>
     <p>The second example tags about loner tags – as in, they don’t need a closing tag to function. Although it’s not required, these type of tags are often written as <tag/> to make the debugging of code easier. Common examples of such tags are <hr/> – used for horizontal line, <br/> – to break the line, etc</p>
-    
-    
-    <!--  
+    <h2>Step Two  HTML, HEAD, and BODY: The three pillars of your document</h2>
+    <img src="https://ninjasfiles.s3.amazonaws.com/0000000000001488.jpg" alt="image of tatoo on body" width="65%">
+    <p>These tags are essential for any HTML document. They parcel out the significant parts of your HTML code.</p>
+    <ul>
+      <li><BODY> </BODY> is placed below your <HEAD> tag, and everything that you want to be displayed on your screen comes under this tag. Text, images, links, and pretty much anything you can see in your browser live inside this tag.</li>
+      <li><HTML> </HTML> wraps your entire code. Everything else in your HTML document needs to come inside these tags.</li>
+      <li><HEAD> </HEAD> includes things like title, styles, and scripts. Head is usually present at the top (hah!), just inside the </HTML> tag.</li>
+    </ul>
+    <h3>Step three – A few tags that’ll make your page pretty</h3>
+    <p>Now that you know how to set up the skeleton of your document, let’s proceed with the things that will go inside your <BODY> tag and do some magic!</p>
+   
+    <p>Some basic text formatting tags:</p>
+    <ul>
+      <li><b> </b> makes your text look bold</li>
+      <li><i> </i> makes you write in cursive</li>
+      <li><u> </u> underlines what you just wrote</li>
+    </ul>
+        <p>For example, this piece of code</p>
+        <hr>
+        <p>
+            <html>
+
+                <head> </head>
+      
+                <body>
+      
+                  <i> I am italics! </i> <br/>
+                  <b> I am bold! </b> <br/>
+                  <u> And me, well, I'm underlined! </u> <br/>
+      
+                </body>
+      
+              </html>
+        </p>
+        
+        <hr>
+
+        <p>Should produce something like this on your browser: Don’t fret too much about the <br/>. It’s just for breaking the line so that you can start from the next line. Enter key does little when it comes to changing lines in your HTML document.</p>
+         
+        <img src="https://ninjasfiles.s3.amazonaws.com/0000000000001490.png" alt="site image" width="70%">
+        <h3>Tags to help you structure your content:</h3>
+        <ul>
+          <li><br/> breaks the line, making you continue to the next line</li>
+          <li><p> stands for paragraph. It divides your content into paragraphs</li>
+        </ul>
+      <p style="font-style: italic;">Note: you need to use these tags as space and enter keys do very little when it comes to formatting content inside an HTML document.</p>
+      <h4>Heading Tags:</h4>
+      <p>HTML provides you with six tags, from <H1> </H1> to <H6> </H6> to help you create different sized headers quickly.</p>
+       <img src="https://ninjasfiles.s3.amazonaws.com/0000000000001487.png" alt="">
+        <h4>Inserting an Image:</h4>
+        <p>All that’s good, but what fun without images on the webpage? Don’t worry, <IMG/> to the rescue! The image tag has a mandatory attribute called “source”. Basically, it tells the browser where it should look for the image. The syntax goes something like:</p>
+        <p>< img src = “path_to_your_image” /></p>
+        <p>Furthermore, it also has attributes like height and width that let you specify the height and width you want your image to take.</p>
+        <h4>Lists:</h4>
+
+        <p>HTML has two types of lists – ordered and unordered. Each item of your list has to be enclosed in a tag. The syntax for creating a list is fairly simple.</p>
+        <p>Suppose you want to create a list like:</p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        
+        <p>The following code will easily do the job for you:
+          </p>
+          <hr>
+          <ul>
+              <li> Item 1 </li>
+              <li> Item 2 </li>
+              <li> Item 3 </li>
+            </ul>
+          <hr>
+          <br>
+          <p>This, by the way, was an example of an unordered list. For an ordered list, all you need to do is replace <ul> with <ol> and </ul> with </ol>.
+          </p>
+          <p>Let’s see what the following code does: 
+            </p>
+          <hr>
+          <p>
+              <html> 
+
+                  <head> </head> 
+        
+                  <body> 
+        
+                    <ul> 
+                      <li> I am unordered list's item 1! </li> 
+                      <li> I am unordered list's item 2! </li> 
+                      <li> I am unordered list's item 3! </li> 
+                      <li> I am unordered list's item 4! </li> 
+                    </ul> 
+                    <ol> 
+                      <li> I am ordered list's item 1! </li> 
+                      <li> I am ordered list's item 2! </li> 
+                      <li> I am ordered list's item 3! </li> 
+                      <li> I am ordered list's item 4! </li> 
+                    </ol> 
+        
+                  </body> 
+        
+                </html>
+          </p>
+          <hr>
+          <hr>
+          <img src="https://ninjasfiles.s3.amazonaws.com/0000000000001489.png" alt="">
+          <p>All of these tags, when arranged coherently, will provide you with a simple webpage consisting of images, headings, and lists. Further, there are various tags that HTML supports, and we thoroughly recommend you to check them out and play with them!
+            </p>
+            <h3>In Conclusion</h3>
+            <p>You now know enough to skim through and understand any part of an HTML code. We request you to go ahead and try skimming through the source code of any website (you’ll find some tags you don’t know, but that’s how you learn!). Oh, and welcome to the world of web development. With HTML under your belt, your next stop should be making your page look beautiful using CSS.
+              </p>
+              <p>Let us know if you had any problems in the article, and don’t forget to have a look at a source code or two!
+                </p>
+          <!--  
 
         (Heading-make a seperate section) A step-by-step walk through of your first HTML page
 
